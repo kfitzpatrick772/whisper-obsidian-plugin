@@ -223,7 +223,7 @@ export default class Whisper extends Plugin {
 	// --- URI Handler ---
 
 	registerUriHandler() {
-		this.registerObsidianProtocolHandler("whisper", async (params) => {
+		this.registerObsidianProtocolHandler("whispr", async (params) => {
 			const command = params.command;
 			if (!command) {
 				this.openControls();
@@ -244,7 +244,7 @@ export default class Whisper extends Plugin {
 					await this.cancelRecording();
 					break;
 				default:
-					new Notice(`✘ Unknown whisper command: ${command}`);
+					new Notice(`✘ Unknown whispr command: ${command}`);
 			}
 		});
 	}

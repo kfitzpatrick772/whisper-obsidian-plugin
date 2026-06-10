@@ -1,11 +1,10 @@
 {
-  "id": "whisper",
-  "name": "Whisper",
-  "version": "1.9.1",
+  "id": "whispr",
+  "name": "Whispr",
+  "version": "1.0.0",
   "minAppVersion": "1.12.7",
-  "description": "Speech-to-text in Obsidian using OpenAI Whisper",
-  "author": "Nik Danilov",
-  "authorUrl": "https://nikdanilov.com",
-  "fundingUrl": "https://ko-fi.com/nikdanilov",
+  "description": "Voice-to-text capture into your Obsidian vault using Whisper",
+  "author": "Kevin Fitzpatrick",
+  "authorUrl": "https://github.com/kfitzpatrick772",
   "isDesktopOnly": false
 }

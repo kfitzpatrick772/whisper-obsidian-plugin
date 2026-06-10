@@ -1,12 +1,14 @@
-# Whisper — Speech-to-text for Obsidian
+# Whispr — Voice-to-text for Obsidian
 
 Record or upload audio, transcribe with [Whisper](https://openai.com/research/whisper), and optionally post-process the result with an LLM. Works on desktop and mobile.
+
+> Personal fork of [nikdanilov/whisper-obsidian-plugin](https://github.com/nikdanilov/whisper-obsidian-plugin) (MIT), security-reviewed and maintained independently.
 
 Works with OpenAI, Groq, Azure, or any other Whisper-compatible API.
 
 ## Quick Start
 
-1. Install from **Settings → Community Plugins** → search "Whisper"
+1. Install manually (see below) — this fork is not in the community plugin store
 2. Add your API key in the plugin settings
 3. Open a note, press `Alt + Q`, speak, press `Alt + Q` again
 
@@ -32,11 +34,11 @@ All commands can be assigned custom hotkeys in Obsidian's hotkey settings:
 Trigger from iOS Shortcuts, Alfred, or any tool that can open URLs:
 
 ```
-obsidian://whisper                 open controls
-obsidian://whisper?command=start   start recording
-obsidian://whisper?command=stop    stop and transcribe
-obsidian://whisper?command=pause   pause/resume
-obsidian://whisper?command=cancel  discard recording
+obsidian://whispr                 open controls
+obsidian://whispr?command=start   start recording
+obsidian://whispr?command=stop    stop and transcribe
+obsidian://whispr?command=pause   pause/resume
+obsidian://whispr?command=cancel  discard recording
 ```
 
 ## Post-Processing
@@ -73,14 +75,8 @@ Use `![[{{audioFile}}]]` to embed audio (playable) or `[[{{audioFile}}]]` to lin
 
 ## Manual Installation
 
-Download `manifest.json`, `main.js`, `styles.css` from [releases](https://github.com/nikdanilov/whisper-obsidian-plugin/releases) into `.obsidian/plugins/whisper/` in your vault.
+Build with `pnpm install && pnpm build`, then copy `manifest.json`, `main.js`, `styles.css` into `.obsidian/plugins/whispr/` in your vault and enable **Whispr** under Community Plugins.
 
-## Contributing
+## Credits
 
-Issues and PRs welcome — [GitHub Issues](https://github.com/nikdanilov/whisper-obsidian-plugin/issues)
-
----
-
-[Buy me a coffee](https://ko-fi.com/nikdanilov) · [@nikdanilov\_](https://twitter.com/nikdanilov_)
-
-[<img src="https://user-images.githubusercontent.com/14358394/115450238-f39e8100-a21b-11eb-89d0-fa4b82cdbce8.png" width="200">](https://ko-fi.com/nikdanilov)
+Forked from [nikdanilov/whisper-obsidian-plugin](https://github.com/nikdanilov/whisper-obsidian-plugin) by Nik Danilov (MIT).
